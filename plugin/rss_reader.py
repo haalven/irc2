@@ -14,7 +14,7 @@ from html import unescape
 def badcheck(rsstext):
 
     # badwords
-    badwords = ['spacex','elon','musk','starship','falcon']
+    badwords = []
 
     for badword in badwords:
         if badword in rsstext.lower(): return True
