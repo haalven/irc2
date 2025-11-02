@@ -1,4 +1,12 @@
 irc2
 ====
 
-a Python terminal IRCv3 client
+* this is a client software for the Internet Relay Chat protocol including IRCv3 
+
+* this program is written in Python standard library, please read and hack the code, it is very high-level and simple
+
+* this program is for command line interfaces only (terminal emulator, multiplexer)
+
+* this is a tool for investigating and handling IRC traffic on the raw, decoded and parsed level
+
+* the client always does only one single TCP connection, if you want more connections: run more clients
