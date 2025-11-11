@@ -11,18 +11,18 @@ def strip_codes(text):
 
     # 1) remove chars > 1FFFF
 
-    #text = ''.join(c for c in text if ord(c) < 0x20000)
+    text = ''.join(c for c in text if ord(c) < 0x20000)
 
     # NEW whitelist range filter:
 
-    whitelist = r'[^' \
-                r'\s\n' \
-                r'\u0000-\u007e' \
-                r'\u00a0-\u200a' \
-                r'\u2010-\u22ff' \
-                r'\u2c00-\ufdff' \
-                r']'
-    text = sub(whitelist, '', text)
+#    whitelist = r'[^' \
+#                r'\s\n' \
+#                r'\u0000-\u007e' \
+#                r'\u00a0-\u200a' \
+#                r'\u2010-\u22ff' \
+#                r'\u2c00-\ufdff' \
+#                r']'
+#    text = sub(whitelist, '', text)
 
 
     # 2) remove formatting codes
